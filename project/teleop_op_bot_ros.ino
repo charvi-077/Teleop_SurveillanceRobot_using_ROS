@@ -15,11 +15,11 @@ void messageCb(const std_msgs::String &msg)
  
   if(var == "f")
    forward();
-  if(var == "b")
+  else if(var == "b")
    backward();
-  if(var == "l")
+  else if(var == "l")
    leftward();
-  if(var == "r")
+  else if(var == "r")
    rightward();
   else
    stops(); 
